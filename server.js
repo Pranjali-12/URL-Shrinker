@@ -1,10 +1,11 @@
 const express=require('express');
 const mongoose=require('mongoose')
-const env=require('dotenv');
+// const env=require('dotenv');
 
 const shortUrl=require('./models/shorturl');
 
-env.config();
+// env.config();
+require('dotenv').config();
 
 const app=express();
 
